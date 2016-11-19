@@ -1,6 +1,6 @@
 # docker-openemr
 
-Docker container for [OpenEMR 4.2.1][3]
+Docker container for [OpenEMR 4.2.2][3]
 
 "OpenEMR is a Free and Open Source electronic health records and medical practice management application that can run on Windows, Linux, Mac OS X, and many other platforms. OpenEMR is ONC certified and is one of the most popular open source electronic medical records in use today. OpenEMR is [supported][6] by a strong community of volunteers and [professionals][7] all with the common goal of making OpenEMR a superior alternative to its proprietary counterparts. The OpenEMR community is dedicated to guarding OpenEMR's status as a free, open source software solution for medical practices and is dedicated to maintaining a spirit of openness, kindness and cooperation."
 
@@ -46,7 +46,7 @@ Where you need to fallow this steps :
   - Open EMR Setup step 2 : 
 
    MYSQL SERVER: 
-    - Server Host ==> db  (this is relate to link container _some-mysql:db_)
+    - Server Host ==> db  (this is relate to link container _some-mysql:db_)angelrr7702-patch-1
     - Server Port ==> 3306 (stay the same)
     - Database Name ==> openemr (stay the same)
     - Login Name ==> openemr (stay the same)
