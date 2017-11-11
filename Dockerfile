@@ -1,13 +1,13 @@
 #name of container: docker-openemr
-#versison of container: 0.3.1
-FROM quantumobject/docker-baseimage:15.04
+#versison of container: 0.3.2
+FROM quantumobject/docker-baseimage:16.04
 MAINTAINER Angel Rodriguez "angel@quantumobject.com"
 
-#add repository and update the container
-#Installation of nesesary package/software for this containers...
+# Update the container
+# Installation of nesesary package/software for this containers...
 RUN apt-get update && apt-get install -y -q apache2 \
-                                            php5 \
-                                            libapache2-mod-php5 \
+                                            php7.0 \
+                                            libapache2-mod-php7.0 \
                                             libdate-calc-perl \
                                             libdbd-mysql-perl \
                                             libhtml-parser-perl \
@@ -15,22 +15,22 @@ RUN apt-get update && apt-get install -y -q apache2 \
                                             libwww-mechanize-perl \
                                             libxml-parser-perl \
                                             libtiff-tools \
-                                            php5-mysql \
-                                            php5-cli \
-                                            php5-gd \
-                                            php5-xsl \
-                                            php5-curl \
-                                            php5-mcrypt \
-                                            php-soap \
+                                            php7.0-mysql \
+                                            php7.0-cli \
+                                            php7.0-gd \
+                                            php7.0-xsl \
+                                            php7.0-curl \
+                                            php7.0-mcrypt \
+                                            php7.0-soap \
                                             imagemagick \
-                                            php5-json \
+                                            php7.0-json \
                                       && apt-get clean \
                                       && rm -rf /tmp/* /var/tmp/* \
                                       && rm -rf /var/lib/apt/lists/*
 
 #General variable definition....
 ##startup scripts
-COPY php.ini /etc/php5/apache2/php.ini
+COPY php.ini /etc/php/7.0/apache2/php.ini
 COPY apache2.conf /etc/apache2/apache2.conf
 
 #Pre-config scrip that maybe need to be run one time only when the container run the first time .. using a flag to don't
