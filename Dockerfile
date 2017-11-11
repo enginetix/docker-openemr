@@ -24,6 +24,7 @@ RUN apt-get update && apt-get install -y -q apache2 \
                                             php7.0-soap \
                                             imagemagick \
                                             php7.0-json \
+                                            php7.0-mbstring \
                                       && apt-get clean \
                                       && rm -rf /tmp/* /var/tmp/* \
                                       && rm -rf /var/lib/apt/lists/*
