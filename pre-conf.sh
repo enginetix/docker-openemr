@@ -4,6 +4,7 @@ wget https://github.com/openemr/openemr/archive/v5_0_0_5.tar.gz
 tar -pxvzf v5_0_0_5.tar.gz
 rm v5_0_0_5.tar.gz
 mv openemr-5_0_0_5 /var/www/openemr
+mkdir -p /var/www/openemr/uploads
 chown -R www-data:www-data /var/www/openemr
 
 #remove the basic page for apache
