@@ -37,7 +37,7 @@ Check with your browser to the assigned xxxx port by docker or you to continue w
 
   - **https://host_ip/**
 
-Where you need to fallow this steps :4_2_2
+Where you need to fallow this steps :
 
   - Open EMR Setup : press _continue_.
 
