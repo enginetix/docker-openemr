@@ -11,7 +11,6 @@ cd /var/www
     chmod 600 openemr/setup.php 
     chmod 600 openemr/sql_upgrade.php 
     chmod 600 openemr/gacl/setup.php 
-    
-    #chmod 600 openemr/ippf_upgrade.php
+    chmod 600 openemr/ippf_upgrade.php
   
     
